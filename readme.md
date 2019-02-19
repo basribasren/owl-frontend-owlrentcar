@@ -1,69 +1,108 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# boilerplate-laravel-bootstrap
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[![Build Status](https://travis-ci.org/basribasren/boilerplate-laravel-bootstrap.svg?branch=master)](https://travis-ci.org/basribasren/boilerplate-laravel-bootstrap) [![CircleCI](https://circleci.com/gh/basribasren/boilerplate-laravel-bootstrap.svg?style=svg)](https://circleci.com/gh/basribasren/boilerplate-laravel-bootstrap) [![dependencies Status](https://david-dm.org/basribasren/boilerplate-laravel-bootstrap/status.svg)](https://david-dm.org/basribasren/boilerplate-laravel-bootstrap) ![GitHub All Releases](https://img.shields.io/github/downloads/basribasren/boilerplate-laravel-bootstrap/total.svg) [![GitHub license](https://img.shields.io/github/license/basribasren/boilerplate-laravel-bootstrap.svg)](https://github.com/basribasren/boilerplate-laravel-bootstrap/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/basribasren/boilerplate-laravel-bootstrap.svg)](https://github.com/basribasren/boilerplate-laravel-bootstrap/commits/master)
 
-## About Laravel
+boilerplate for create web using laravel v5 with bootstrap admin theme.
+Tools : Laravel, Bootstrap, Webpack, compoers, artisan, bootstrap admin theme.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Available Link
+To see Demo of `Guest Page` you can accses this link : https://owlrentcar.herokuapp.com/ <br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Ecosystem
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+<!-- prettier-ignore -->
+| Project | Status | Description |
+|---------|--------|-------------|
+| [laravel]          | [![laravel-status]][laravel-package] | A PHP framework for web artisans. |
 
-## Learning Laravel
+[laravel]: https://github.com/laravel/laravel
+[laravel-status]: https://travis-ci.org/laravel/framework.svg?branch=master
+[laravel-package]: https://packagist.org/packages/laravel/framework
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+## Folder Structure
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+After creation, your project should look like this:
 
-## Laravel Sponsors
+```
+my-app/
+├── node_modules/
+├── vendor/
+├── app/
+│   └── .../
+│   └── .../
+│   └── Http/
+│   └── .../
+│   └── User.php
+├── .../
+├── .../
+├── .../
+├── public/
+│   └── assets/
+├── resources/
+│   └── assets/
+│   	└── css/
+│   	└── js/
+│   	└── .../
+│   └── .../
+│   └── views/
+├── routes/
+├── .../
+├── .../
+├── composer.json
+├── package.json
+├── Procfile.js
+└── webpack.mix.js
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
+## Available Scripts
 
-## Contributing
+In the project directory, you can run:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### `npm install`
 
-## Security Vulnerabilities
+Runs this command to install npm dependencies<br>
+result will in the `node_modules` folder
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### `php composer.phar install`
+
+Runs this command to install composer dependencies<br>
+result will in the `vendor` folder
+
+### `php artisan list`
+
+To view a list of all available Artisan commands, you may use the list command<br>
+to view list artisan command articel [Artisan Command](https://quickadminpanel.com/blog/list-of-16-artisan-make-commands-with-parameters/)
+
+### `npm run dev`
+
+Run webpack to create assets in public folder in development mode.<br>
+
+### `npm run watch`
+
+Run webpack to create assets in public folder in watch mode.<br>
+
+### `npm run hot`
+
+Builds the app for production to the `dist` folder.<br>
+
+### `npm run production`
+
+Run webpack to create assets in public folder in production mode<br>
+
+## Maintainers
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<img src="https://avatars1.githubusercontent.com/u/32034751?s=400&v=4" width="100px;"/><br /><sub><b>Nurlisah</b></sub>
+<img src="https://avatars0.githubusercontent.com/u/25193994?v=4" width="100px;"/><br /><sub><b>Basri Basren</b></sub>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## Something Missing?
+
+If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/basribasren/boilerplate-react-redux/issues)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
